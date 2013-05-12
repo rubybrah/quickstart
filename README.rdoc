@@ -16,6 +16,24 @@ helpful Rails API: http://www.ruby-doc.org
 3. start the server:
       rails s
 
+optional:
+4. remove the remote:
+      git remote rm origin
+
+5. add your own remote from GitHub
+
+
+== For production with Heroku:
+
+1. Create a domain:
+      heroku create
+
+2. Rename the domain:
+      heroku rename bettername
+
+3. Push from GitHub to Heroku:
+      git push heroku master
+
 
 == What is already included:
 
@@ -36,6 +54,16 @@ helpful Rails API: http://www.ruby-doc.org
 
 6. Flash-messages are rendered in layouts/application.html.erb:
       <%= render 'layouts/messages' %>
+
+7. SQLite3 for development:
+      group :development do
+        gem 'sqlite3', '1.3.5'
+      end
+
+8. PostgresQL for production:
+      group :production do
+        gem 'pg', '0.12.2'
+      end
 
 
 == What was deleted:

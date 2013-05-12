@@ -2,7 +2,7 @@
 
 Jump quickly into new projects/ideas.
 
-helpful Rails API: http://www.ruby-doc.org
+helpful Ruby API: http://www.ruby-doc.org
 
 
 == Getting started:
@@ -16,22 +16,23 @@ helpful Rails API: http://www.ruby-doc.org
 3. start the server:
       rails s
 
-optional:
-4. remove the remote:
+4. optional: remove the GitHub remote:
       git remote rm origin
 
-5. add your own remote from GitHub
+5. add your own remote from your new GitHub repository
+      git remote add origin git@github.com:<your_github_name>/<your_repository_name>.git
+      git push -u origin master
 
 
 == For production with Heroku:
 
-1. Create a domain:
+1. Navigate in the root-directory 'quickstart' and create a domain:
       heroku create
 
 2. Rename the domain:
       heroku rename bettername
 
-3. Push from GitHub to Heroku:
+3. Push the Code from GitHub to Heroku:
       git push heroku master
 
 

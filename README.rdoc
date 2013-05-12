@@ -10,17 +10,21 @@ This is a rails application for quickly starting into new projects.
 2. root_path is availabel and set to:
       root :to => "static_pages#home"
 
-3. Go to http://localhost:3000/ and you'll see:
-       "Welcome aboard: You're riding Ruby on Rails!"
+3. Bootstrap added to the Gemfile:
+      gem 'bootstrap-sass', '>= 2.1.1.0'
 
-4. Follow the guidelines to start developing your application. You can find
-the following resources handy:
+4. Bootstrap is importet in the custom.css.scss
 
-* The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
-* Ruby on Rails Tutorial Book: http://www.railstutorial.org/
+5. A Navbar is rendered.
+
+6. Flash-messages are rendered.
 
 
 == What was deleted:
+
+1. the default index page:
+      git rm public/index.html
+
 
 Sometimes your application goes wrong. Fortunately there are a lot of tools that
 will help you debug it and get it back on the rails.

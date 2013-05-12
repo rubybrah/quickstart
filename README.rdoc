@@ -8,38 +8,38 @@ helpful Ruby API: http://www.ruby-doc.org
 == Getting started:
 
 1. Clone this repository:
-      git clone git@github.com:rubybrah/quickstart.git
+      $ git clone git@github.com:rubybrah/quickstart.git
 
 2. bundle it:
-      bundle install
+      $ bundle install
 
 3. start the server:
-      rails s
+      $ rails s
 
 4. optional: remove the GitHub remote:
-      git remote rm origin
+      $ git remote rm origin
 
-5. add your own remote from your new GitHub repository
-      git remote add origin git@github.com:<your_github_name>/<your_repository_name>.git
-      git push -u origin master
+5. optional: add your own remote from your new GitHub repository
+      $ git remote add origin git@github.com:<your_github_name>/<your_repository_name>.git
+      $ git push -u origin master
 
 
 == For production with Heroku:
 
 1. Navigate in the root-directory 'quickstart' and create a domain:
-      heroku create
+      $ heroku create
 
 2. Rename the domain:
-      heroku rename bettername
+      $ heroku rename bettername
 
 3. Push the Code from GitHub to Heroku:
-      git push heroku master
+      $ git push heroku master
 
 
 == What is already included:
 
 1. A StaticPages Controller:
-      rails generate controller StaticPages home
+      $ rails generate controller StaticPages home
 
 2. root_path is availabel and set to:
       root :to => "static_pages#home"

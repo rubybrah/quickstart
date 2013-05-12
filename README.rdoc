@@ -14,11 +14,13 @@ This is a rails application for quickly starting into new projects.
       gem 'bootstrap-sass', '>= 2.1.1.0'
 
 4. Bootstrap is importet in the custom.css.scss
+      @import "bootstrap";
 
-5. A Navbar is rendered.
+5. A Navbar is rendered:
+      <%= render 'layouts/navigation' %>
 
-6. Flash-messages are rendered.
-
+6. Flash-messages are rendered:
+      <%= render 'layouts/messages' %>
 
 == What was deleted:
 

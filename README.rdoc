@@ -2,13 +2,13 @@
 
 This is a rails application for quickly starting into new projects.
 
-== It includes
+== What is already included:
 
 1. A StaticPages Controller:
-       rails generate controller StaticPages home
+      rails generate controller StaticPages home
 
-2. Change directory to <tt>myapp</tt> and start the web server:
-       <tt>cd myapp; rails server</tt> (run with --help for options)
+2. root_path is availabel and set to:
+      root :to => "static_pages#home"
 
 3. Go to http://localhost:3000/ and you'll see:
        "Welcome aboard: You're riding Ruby on Rails!"
@@ -20,7 +20,7 @@ the following resources handy:
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
 
 
-== Debugging Rails
+== What was deleted:
 
 Sometimes your application goes wrong. Fortunately there are a lot of tools that
 will help you debug it and get it back on the rails.

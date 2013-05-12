@@ -2,7 +2,20 @@
 
 Jump quickly into new projects/ideas.
 
-helpful Rails API: http://www.ruby-doc.org/
+helpful Rails API: http://www.ruby-doc.org
+
+
+== Getting started:
+
+1. Clone this repository:
+      git clone git@github.com:rubybrah/quickstart.git
+
+2. bundle it:
+      bundle install
+
+3. start the server:
+      rails s
+
 
 == What is already included:
 
@@ -23,6 +36,7 @@ helpful Rails API: http://www.ruby-doc.org/
 
 6. Flash-messages are rendered in layouts/application.html.erb:
       <%= render 'layouts/messages' %>
+
 
 == What was deleted:
 
